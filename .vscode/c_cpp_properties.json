@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/**"
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "cppStandard": "c++23",
+            "forcedInclude": [],
+            "browse": {
+                "path": [
+                    "/usr/include/**"
+                ]
+            }
+        }
+    ],
+    "version": 4
+}
