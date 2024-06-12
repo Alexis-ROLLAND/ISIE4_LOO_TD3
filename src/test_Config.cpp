@@ -10,7 +10,7 @@ int main(){
     pic24_register  TRISA{"TRISA",0xff00};
 
     myConfig.add(TRISA);
-    myConfig.dump();
+    myConfig.dump(); 
 
     try{
         myConfig.add(TRISA);
@@ -45,6 +45,7 @@ int main(){
     std::println("Size = {0:d}",myConfig.getSize());
 
     std::println("--- End Test ---");
+
 
     return 0;
 }
