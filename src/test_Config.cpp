@@ -5,7 +5,7 @@
 int main(){
     std::println ("-- Test classe Config --");  /**< Affichage */
     
-    Config myConfig{};
+    Config myConfig{};  /**< New Config Object */
 
     pic24_register  TRISA{"TRISA",0xff00};
 

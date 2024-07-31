@@ -41,7 +41,10 @@ class Config{
         void    add(pic24_register reg, bool ChangeIfExists = false);    
         
         /**
+         *  @brief : Removes a register:value pair into the ConfigList
+         *  @param const std::string &key : Register's key to remove
          * 
+         *  @throw : td::invalid_argument("Register doesn't exist.") if the key doesn't exit.
          */
         void    remove(const std::string &key);
         
