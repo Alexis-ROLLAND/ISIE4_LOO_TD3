@@ -41,6 +41,14 @@
         "stdexcept": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "print": "cpp"
+        "print": "cpp",
+        "cstdarg": "cpp",
+        "ctime": "cpp",
+        "cwctype": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "streambuf": "cpp",
+        "text_encoding": "cpp"
     }
 }

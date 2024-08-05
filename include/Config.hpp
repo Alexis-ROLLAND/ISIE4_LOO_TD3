@@ -49,7 +49,10 @@ class Config{
         void    remove(const std::string &key);
         
         /**
+         * @brief : Removes a register:value pair into the ConfigList
+         * @param pic24_register reg : Register to remove
          * 
+         * @throw : td::invalid_argument("Register doesn't exist.") if the key doesn't exit.
          */
         void    remove(pic24_register reg) {this->remove(reg.first);};  /**< Simple call to the std::string based remove function */
         
