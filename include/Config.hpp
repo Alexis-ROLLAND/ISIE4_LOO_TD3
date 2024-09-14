@@ -32,29 +32,29 @@ class Config{
         /**
          * @brief : adds a register:value pair into the ConfigList
          * 
-         * @param pic24_register reg : pair to add
-         * @param bool ChangeIfExists : true to change value if register is already in the ConfigList, false (default) to make sure
+         * @param[in]   const pic24_register &reg : pair to add
+         * @param       bool ChangeIfExists : true to change value if register is already in the ConfigList, false (default) to make sure
          *                              an existing register value won't be touched.
          * 
          * @throw : std::invalid_argument("Register already exists.") if ChangeIfExits is false and the register is already listed.  
          */
-        void    add(pic24_register reg, bool ChangeIfExists = false);    
+        void    add(const pic24_register &reg, bool ChangeIfExists = false);    
         
         /**
          *  @brief : Removes a register:value pair into the ConfigList
-         *  @param const std::string &key : Register's key to remove
+         *  @param[in]  const std::string &key : Register's key to remove
          * 
-         *  @throw : td::invalid_argument("Register doesn't exist.") if the key doesn't exit.
+         *  @throw : std::invalid_argument("Register doesn't exist.") if the key doesn't exit.
          */
         void    remove(const std::string &key);
         
         /**
          * @brief : Removes a register:value pair into the ConfigList
-         * @param pic24_register reg : Register to remove
+         * @param[in]   const pic24_register &reg : Register to remove
          * 
-         * @throw : td::invalid_argument("Register doesn't exist.") if the key doesn't exit.
+         * @throw : std::invalid_argument("Register doesn't exist.") if the key doesn't exit.
          */
-        void    remove(pic24_register reg) {this->remove(reg.first);};  /**< Simple call to the std::string based remove function */
+        void    remove(const pic24_register &reg) {this->remove(reg.first);};  /**< Simple call to the std::string based remove function */
         
         /**
          * 

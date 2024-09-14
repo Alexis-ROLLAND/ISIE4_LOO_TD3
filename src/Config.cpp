@@ -1,7 +1,7 @@
 #include "Config.hpp"
 
 //----------------------------------------------------------------------------
-void    Config::add(pic24_register reg, bool ChangeIfExists){
+void    Config::add(const pic24_register &reg, bool ChangeIfExists){
     auto it = this->ConfigList.find(reg.first);
     if ( it  == this->ConfigList.end()){
         this->ConfigList.insert(reg);   /**> The key doesn't exist in the map, ok, insert the new one   */
