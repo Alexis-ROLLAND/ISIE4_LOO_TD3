@@ -7,7 +7,7 @@ int main(){
     
     Config myConfig{};  /**< New Config Object */
 
-    pic24_register  TRISA{"TRISA",0xff00};
+    Config::pic24_register  TRISA{"TRISA",0xff00};
 
     myConfig.add(TRISA);
     myConfig.dump(); 

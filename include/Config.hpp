@@ -18,10 +18,10 @@
 #include <iostream>
 #include <exception>
 
-using   pic24_register = std::pair<std::string, uint16_t>;  /**< Create a new type called pic24_register, as a pair of string:uint16_t */
-
 class Config{
-    		
+    public:
+    using   pic24_register = std::pair<std::string, uint16_t>;  /**< Create a new "internal" type called pic24_register, as a pair of string:uint16_t */
+
     private:
     std::unordered_map<std::string, uint16_t> ConfigList{};  
         
