@@ -24,10 +24,15 @@ class Config {
                                                                 a pair of string:uint16_t */
 
   private:
-    std::unordered_map<std::string, uint16_t> ConfigList{};
+    std::unordered_map<std::string, uint16_t> ConfigList{}; /**< Map containing the configuration registers */
 
   public:
-    Config() = default;          /**< constructeur par défaut - defaulted */
+    Config() = default;                          /**< constructeur par défaut - defaulted */
+    Config(const Config &) = default;            /**< constructeur de copie - defaulted */
+    Config(Config &&) = default;                 /**< constructeur de déplacement - defaulted */
+    Config &operator=(const Config &) = default; /**< opérateur d'affectation par copie - defaulted */
+    Config &operator=(Config &&) = default;      /**< opérateur d'affectation par déplacement - defaulted */
+
     virtual ~Config() = default; /**< Destructeur par défaut */
 
     /**
