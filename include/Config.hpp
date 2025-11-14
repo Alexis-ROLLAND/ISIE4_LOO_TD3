@@ -2,7 +2,7 @@
  *	@file	Config.hpp
  * 	@brief 	Config class header file
  * 	@author	Alexis ROLLAND
- * 	@date	2024-06
+ * 	@date	2025-11
  *
  */
 

@@ -8,7 +8,7 @@ void Config::add(const pic24_register &reg, bool ChangeIfExists) {
         std::println(std::clog, "Register {0:s} has been successfully inserted.", reg.first); /**< Affichage */
     } else {
         if (ChangeIfExists) {
-            this->ConfigList.at(reg.first) = reg.second; /**< then add the new one */
+            this->ConfigList.at(reg.first) = reg.second;                                         /**< update */
             std::println(std::clog, "Register {0:s} has been successfully changed.", reg.first); /**< Affichage */
         } else {
             throw std::invalid_argument("Register already exists."); /**< Throw Exception */
